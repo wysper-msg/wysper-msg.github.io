@@ -1,1 +1,55 @@
-Wysper-Msg website!
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<style>
+    body {
+        margin-left: 30%;
+        background-color: grey;
+    }
+    .main {
+        width: 50%;
+    }
+    a, pre {
+        color: #004904;
+    }
+
+</style>
+
+<body>  
+    <strong><pre>
+  | |  ___   /  /
+  | | /   | /  /
+  | |/  / |/  /
+  |____/|____/  y s p e r          m e s s a g i n g          s e r v i c e</pre></strong>
+    
+    <div class="main">
+        <h3>What is it?</h3>
+        Wysper-msg is a messaging application that allows you to store your conversations 
+        on your own server. 
+        <br>
+        <h3>How does it work?</h3>
+        Wysper is installed as a Client application and a Server application separately. 
+        <br>
+        The server administrator for your chat launches the wysper-server application and gives the ip address and port 
+        to anyone they want to be able to join the chat.
+        <br>
+        Clients can launch the client application and connect using the server administrators ip address and port.
+        <br>
+        <h3>Installation</h3>
+        To use Wysper, first clone our release repository at https://github.com/wysper-msg/downloads
+        <h4>Server</h4>
+        To run the server, find the run.sh file in the Server folder of the cloned repository <br>
+        Edit the file and enter your port and any other configuration options you may want. <br><br>
+        Finally, run <code>./run.sh</code> to run the server. <br><br>
+        Check out <a href="https://github.com/wysper-msg/downloads/Server/README.txt">The server README</a> for more information!
+        <h4>Client</h4>
+        To run the client, enter the Client/wysper-client folder and run java -jar client.jar to run the client. <br><br>
+        Once the client is started, you can enter the server's ip address and port to connect and start sending messages!
+    </div>
+
+</body>
+
+
