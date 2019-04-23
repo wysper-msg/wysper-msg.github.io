@@ -6,28 +6,42 @@
 
 <style>
     body {
-        margin-left: 30%;
-        background-color: grey;
+        background-color: #686868;
+        color: white;
     }
-    .main {
+    .main { 
+        margin: auto;
         width: 50%;
+        font-family: Verdana;
     }
-    a, pre {
+    a {
+        color: #004904;       
+        font-weight: bold;
+    }
+    pre {
+        color: #004904;       
+        font-weight: bold;
+        font-size: 150%;
+    }
+    .hashtag {
         color: #004904;
+        font-family: Verdana;
+        margin: auto;
+        width: 50%;
     }
 
 </style>
 
 <body>  
-    <strong><pre>
-  | |  ___   /  /
-  | | /   | /  /
-  | |/  / |/  /
-  |____/|____/  y s p e r          m e s s a g i n g          s e r v i c e</pre></strong>
-    
-    <div class="main">
+    <div class="main"> 
+    <div><strong><pre>
+| |  ___   /  /
+| | /   | /  /
+| |/  / |/  /
+|____/|____/  y s p e r          m e s s a g i n g          s e r v i c e</pre></strong>
+    </div>
         <h3>What is it?</h3>
-        Wysper-msg is a messaging application that allows you to store your conversations 
+        Wysper is a messaging application that allows you to store your conversations 
         on your own server. 
         <br>
         <h3>How does it work?</h3>
@@ -36,20 +50,42 @@
         The server administrator for your chat launches the wysper-server application and gives the ip address and port 
         to anyone they want to be able to join the chat.
         <br>
-        Clients can launch the client application and connect using the server administrators ip address and port.
+        Clients can launch the wysper-client application and connect using the server administrators ip address and port.
         <br>
+        
         <h3>Installation</h3>
-        To use Wysper, first clone our release repository at https://github.com/wysper-msg/downloads
+        To use Wysper, follow the download links below for your platform-specific installion process, or clone our release 
+        repository at <a href="https://github.com/wysper-msg/downloads">https://github.com/wysper-msg/downloads</a>
+        
         <h4>Server</h4>
-        To run the server, find the run.sh file in the Server folder of the cloned repository <br>
-        Edit the file and enter your port and any other configuration options you may want. <br><br>
-        Finally, run <code>./run.sh</code> to run the server. <br><br>
-        Check out <a href="https://github.com/wysper-msg/downloads/Server/README.txt">The server README</a> for more information!
+        Prerequisites:
+        <ul>
+            <li> Ubuntu 18.04 LTS<br>
+                <i>Note: Server is untested on other Unix systems. Feel free to try it out though!</i>
+            </li>
+            <li> Java JRE 8 or newer, <b>OR</b> </li>
+            <li> OpenJDK 1.8 </li>
+        </ul>
+        To run the server, download the zip, extract where you please, and enter configuration options you want in
+        the <code>run.sh</code> script. See the server README in that directory for more information.<br><br>
+        Downloads: <br>
+        <a href="https://github.com/wysper-msg/downloads/raw/master/Server/wysper-server-linux.zip">Linux</a>
+        
         <h4>Client</h4>
-        To run the client, enter the Client/wysper-client folder and run java -jar client.jar to run the client. <br><br>
-        Once the client is started, you can enter the server's ip address and port to connect and start sending messages!
+        Prerequisites:
+        <ul>
+            <li> Java JRE 8 or newer, <b>OR</b> </li>
+            <li> OpenJDK 1.8 and OpenJFX</li>
+        </ul>
+        To run the client, download the zip for your platform, extract where you please, and follow the platform-specific
+        instructions in the README file in that directory. <br><br>
+        Downloads: <br>
+        <a href="https://github.com/wysper-msg/downloads/raw/master/Client/wysper-client-linux.zip">Linux</a> <br>
+        <a href="https://github.com/wysper-msg/downloads/raw/master/Client/wysper-client-windows.zip">Windows</a> <br><br>
+        Note: There are known GUI bugs on the Windows version of Wysper when using window-snapping features. Simply resize
+        the window manually to make all GUI elements visible again.
+    
+    <div class=hashtag><h2>#CommunicationControlled</h2><br><br></div>
     </div>
-
 </body>
-
 
